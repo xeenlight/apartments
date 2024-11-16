@@ -81,7 +81,7 @@ const ApartmentList: React.FC = () => {
               {/* Отображение дополнительных фотографий по их ID */}
               {photoIDs && photoIDs.length > 0 && photoIDs.map((id: number, index: number) => {
                 // Пример корректного URL для дополнительной фотографии
-                const photoUrl = `https://bayut-production.s3.eu-central-1.amazonaws.com/image/${id}/image.jpg`;
+                const photoUrl = `https://images.bayut.com/thumbnails/${id}-800x600.webp`;
                 return (
                   <Photo
                     key={index}
